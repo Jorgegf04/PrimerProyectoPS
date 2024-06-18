@@ -1,0 +1,5 @@
+@startuml
+class PdfReportGenerator {
+    + GeneratePdfReport(report:PhishingReport) : byte[]
+}
+@enduml

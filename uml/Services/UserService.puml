@@ -1,0 +1,15 @@
+@startuml
+class UserService {
+    - <<readonly>> _connectionString : string
+    + UserService(configuration:IConfiguration, logger:ILogger<UserService>)
+    + <<async>> GetUsersAsync() : Task<List<User>>
+    + <<async>> GetUserByIdAsync(id:int) : Task<User>
+    + <<async>> AddUserAsync(user:User) : Task
+    + <<async>> UpdateUserAsync(user:User) : Task
+    + <<async>> DeleteUserAsync(id:int) : Task
+}
+class "ILogger`1"<T> {
+}
+IUserService <|-- UserService
+UserService --> "_logger<UserService>" "ILogger`1"
+@enduml

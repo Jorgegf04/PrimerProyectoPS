@@ -1,0 +1,6 @@
+@startuml
+class "AddScoped`2"<T1,T2> {
+}
+class "AddScoped`1"<T> {
+}
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class SuspiciousWords <<static>> {
+}
+class "List`1"<T> {
+}
+SuspiciousWords o-> "Words<string>" "List`1"
+@enduml

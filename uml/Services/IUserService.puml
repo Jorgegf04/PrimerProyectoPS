@@ -1,0 +1,9 @@
+@startuml
+interface IUserService {
+    GetUsersAsync() : Task<List<User>>
+    GetUserByIdAsync(id:int) : Task<User>
+    AddUserAsync(user:User) : Task
+    UpdateUserAsync(user:User) : Task
+    DeleteUserAsync(id:int) : Task
+}
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+class PhishingController {
+    + PhishingController(phishingService:IPhishingInterface, logger:ILogger<PhishingController>)
+    + <<async>> TrackOpen(emailId:string) : Task<IActionResult>
+    + <<async>> TrackClick(emailId:string, target:string) : Task<IActionResult>
+}
+class "ILogger`1"<T> {
+}
+ControllerBase <|-- PhishingController
+PhishingController --> "_phishingService" IPhishingInterface
+PhishingController --> "_logger<PhishingController>" "ILogger`1"
+@enduml

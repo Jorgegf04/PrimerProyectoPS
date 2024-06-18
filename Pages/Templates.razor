@@ -1,0 +1,131 @@
+﻿@page "/templates"
+@using BlazorSimuladorJGF.Models
+@using BlazorSimuladorJGF.Services
+@inject EmailTemplateService TemplateService
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JS
+
+<h3>Email Templates</h3>
+
+<button class="btn btn-primary" @onclick="ShowCreateForm">Create New Template</button>
+
+@if (templates != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Is Suspicious</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var template in templates)
+            {
+                <tr>
+                    <td>@template.Name</td>
+                    <td>@template.Subject</td>
+                    <td>@template.IsSuspicious</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => ShowEditForm(template)">Edit</button>
+                        <button class="btn btn-danger" @onclick="() => DeleteTemplate(template.Id)">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p><em>Loading...</em></p>
+}
+
+@if (showForm)
+{
+    <EditForm Model="@currentTemplate" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div>
+            <label for="name">Name:</label>
+            <InputText id="name" @bind-Value="currentTemplate.Name" />
+        </div>
+
+        <div>
+            <label for="subject">Subject:</label>
+            <InputText id="subject" @bind-Value="currentTemplate.Subject" />
+        </div>
+
+        <div>
+            <label for="body">Body:</label>
+            <InputTextArea id="body" @bind-Value="currentTemplate.Body" />
+        </div>
+
+        <button type="submit" class="btn btn-success">Save</button>
+        <button type="button" class="btn btn-secondary" @onclick="CancelForm">Cancel</button>
+    </EditForm>
+}
+
+@code {
+    private List<EmailTemplate> templates;
+    private bool showForm = false;
+    private EmailTemplate currentTemplate = new EmailTemplate();
+    private bool isEditing = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        templates = await TemplateService.GetTemplatesAsync();
+    }
+
+    private void ShowCreateForm()
+    {
+        currentTemplate = new EmailTemplate();
+        showForm = true;
+        isEditing = false;
+    }
+
+    private void ShowEditForm(EmailTemplate template)
+    {
+        currentTemplate = new EmailTemplate
+        {
+            Id = template.Id,
+            Name = template.Name,
+            Subject = template.Subject,
+            Body = template.Body,
+            IsSuspicious = template.IsSuspicious
+        };
+        showForm = true;
+        isEditing = true;
+    }
+
+    private void CancelForm()
+    {
+        showForm = false;
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        if (isEditing)
+        {
+            await TemplateService.UpdateTemplateAsync(currentTemplate);
+        }
+        else
+        {
+            await TemplateService.CreateTemplateAsync(currentTemplate);
+        }
+
+        templates = await TemplateService.GetTemplatesAsync();
+        showForm = false;
+    }
+
+    private async Task DeleteTemplate(int id)
+    {
+        bool confirmed = await JS.InvokeAsync<bool>("confirm", "Are you sure you want to delete this template?");
+        if (confirmed)
+        {
+            await TemplateService.DeleteTemplateAsync(id);
+            templates = await TemplateService.GetTemplatesAsync();
+        }
+    }
+}

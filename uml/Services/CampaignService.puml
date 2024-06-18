@@ -1,0 +1,18 @@
+@startuml
+class CampaignService {
+    - <<readonly>> _connectionString : string
+    + CampaignService(configuration:IConfiguration, logger:ILogger<CampaignService>)
+    + <<async>> CreateCampaignAsync(campaign:Campaign) : Task
+    + <<async>> GetCampaignsAsync() : Task<List<Campaign>>
+    + <<async>> GetCampaignByIdAsync(id:int) : Task<Campaign>
+    + <<async>> MarkEmailAsOpenedAsync(emailId:string) : Task
+    + <<async>> MarkEmailAsClickedAsync(emailId:string) : Task
+    - <<async>> UpdateEmailStatusAsync(emailId:string, statusColumn:string, dateColumn:string) : Task
+    + <<async>> UpdateCampaignAsync(campaign:Campaign) : Task
+    + <<async>> DeleteCampaignAsync(id:int) : Task
+}
+class "ILogger`1"<T> {
+}
+ICampaignInterface <|-- CampaignService
+CampaignService --> "_logger<CampaignService>" "ILogger`1"
+@enduml

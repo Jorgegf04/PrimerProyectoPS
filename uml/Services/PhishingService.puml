@@ -1,0 +1,15 @@
+@startuml
+class PhishingService {
+    - <<readonly>> _connectionString : string
+    + PhishingService(configuration:IConfiguration, logger:ILogger<PhishingService>)
+    + <<async>> LogPhishingAttemptAsync(userId:int, campaignId:int, isPhished:bool) : Task<bool>
+    + <<async>> GetPhishingResultsAsync(campaignId:int) : Task<List<PhishingTest>>
+    + <<async>> MarkEmailAsOpenedAsync(emailId:string) : Task<bool>
+    + <<async>> MarkEmailAsClickedAsync(emailId:string) : Task<bool>
+    - <<async>> UpdateEmailStatusAsync(emailId:string, statusColumn:string, dateColumn:string) : Task<bool>
+}
+class "ILogger`1"<T> {
+}
+IPhishingInterface <|-- PhishingService
+PhishingService --> "_logger<PhishingService>" "ILogger`1"
+@enduml

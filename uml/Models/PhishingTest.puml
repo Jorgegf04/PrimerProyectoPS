@@ -1,0 +1,11 @@
+@startuml
+class PhishingTest {
+    + Id : int <<get>> <<set>>
+    + CampaignId : int <<get>> <<set>>
+    + UserId : int <<get>> <<set>>
+    + IsPhished : bool <<get>> <<set>>
+}
+PhishingTest o-> "PhishedAt" DateTime
+PhishingTest --> "Campaign" Campaign
+PhishingTest --> "User" User
+@enduml

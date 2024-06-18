@@ -1,0 +1,25 @@
+@startuml
+class EmailService {
+    - <<readonly>> _connectionString : string
+    - <<const>> EmailUserNameConfigKey : string = "Email:UserName"
+    - <<const>> EmailPasswordConfigKey : string = "Email:PassWord"
+    - <<const>> EmailHostConfigKey : string = "Email:Host"
+    - <<const>> EmailPortConfigKey : string = "Email:Port"
+    + EmailService(config:IConfiguration, logger:ILogger<EmailService>)
+    + <<async>> SendEmailAsync(request:EmailDTO) : Task
+    + GetTemplateByName(templateName:string) : EmailTemplate
+    + ReplacePlaceholders(templateBody:string, placeholders:Dictionary<string, string>) : string
+    + <<async>> SendEmailWithTemplateAsync(to:string, templateName:string, placeholders:Dictionary<string, string>) : Task
+    - <<async>> SendEmailViaSmtpAsync(email:MimeMessage) : Task
+    - <<async>> SaveEmailResultAsync(emailId:string, recipient:string) : Task
+    - ValidateEmailRequest(request:EmailDTO) : void
+}
+class "ILogger`1"<T> {
+}
+class "List`1"<T> {
+}
+IEmailInterface <|-- EmailService
+EmailService --> "_config" IConfiguration
+EmailService --> "_logger<EmailService>" "ILogger`1"
+EmailService --> "_templates<EmailTemplate>" "List`1"
+@enduml

@@ -1,0 +1,301 @@
+2024-05-22 14:02:07.548 +02:00 [INF] User profile is available. Using 'C:\Users\jgfes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-22 14:02:08.360 +02:00 [INF] Now listening on: https://localhost:7255
+2024-05-22 14:02:08.370 +02:00 [INF] Now listening on: http://localhost:5207
+2024-05-22 14:02:08.378 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-22 14:02:08.389 +02:00 [INF] Hosting environment: Development
+2024-05-22 14:02:08.404 +02:00 [INF] Content root path: C:\Users\jgfes\source\repos\BlazorSimuladorJGF
+2024-05-22 14:02:09.608 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/ - null null
+2024-05-22 14:02:09.929 +02:00 [INF] Executing endpoint '/_Host'
+2024-05-22 14:02:09.961 +02:00 [INF] Route matched with {page = "/_Host", action = "", controller = ""}. Executing page /_Host
+2024-05-22 14:02:09.981 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-22 14:02:09.983 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-22 14:02:10.317 +02:00 [INF] Executed page /_Host in 350.6288ms
+2024-05-22 14:02:10.322 +02:00 [INF] Executed endpoint '/_Host'
+2024-05-22 14:02:10.326 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following routes are ambiguous:
+'counter' in 'BlazorSimuladorJGF.Components.Pages.Counter'
+'counter' in 'BlazorSimuladorJGF.Pages.Counter'
+
+   at Microsoft.AspNetCore.Components.RouteTableFactory.DetectAmbiguousRoutes(TreeRouteBuilder builder)
+   at Microsoft.AspNetCore.Components.RouteTableFactory.Create(Dictionary`2 templatesByHandler, IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Components.RouteTableFactory.Create(List`1 componentTypes, IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Components.RouteTableFactory.Create(RouteKey routeKey, IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Components.Routing.Router.RefreshRouteTable()
+   at Microsoft.AspNetCore.Components.Routing.Router.Refresh(Boolean isNavigationIntercepted)
+   at Microsoft.AspNetCore.Components.Routing.Router.RunOnNavigateAsync(String path, Boolean isNavigationIntercepted)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.AddToRenderQueue(Int32 componentId, RenderFragment renderFragment)
+   at Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary.SetParametersAsync(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SupplyCombinedParameters(ParameterView directAndCascadingParameters)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.RenderRootComponentAsync(Int32 componentId, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer.BeginRenderingComponent(IComponent component, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.Endpoints.EndpointHtmlRenderer.<>c__DisplayClass35_0.<PrerenderComponentAsync>b__0()
+   at Microsoft.AspNetCore.Components.Rendering.RendererSynchronizationContext.<InvokeAsync>g__Execute|9_0[TResult](ValueTuple`3 state)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.Endpoints.EndpointHtmlRenderer.PrerenderComponentAsync(HttpContext httpContext, Type componentType, IComponentRenderMode prerenderMode, ParameterView parameters, Boolean waitForQuiescence)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.ComponentTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at BlazorSimulador.Pages.Pages__Host.<ExecuteAsync>b__14_1() in C:\Users\jgfes\source\repos\BlazorSimuladorJGF\Pages\_Host.cshtml:line 22
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at BlazorSimulador.Pages.Pages__Host.ExecuteAsync() in C:\Users\jgfes\source\repos\BlazorSimuladorJGF\Pages\_Host.cshtml:line 7
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-22 14:02:10.488 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/ - 500 null text/html; charset=utf-8 889.0044ms
+2024-05-22 14:02:10.524 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-22 14:02:10.524 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_vs/browserLink - null null
+2024-05-22 14:02:10.556 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 31.9489ms
+2024-05-22 14:02:10.635 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_vs/browserLink - 200 null text/javascript; charset=UTF-8 111.3572ms
+2024-05-22 14:02:10.667 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/favicon.ico - null null
+2024-05-22 14:02:10.697 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/favicon.ico - 404 0 null 29.6574ms
+2024-05-22 14:02:10.711 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7255/favicon.ico, Response status code: 404
+2024-05-22 14:06:03.912 +02:00 [INF] User profile is available. Using 'C:\Users\jgfes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-22 14:06:04.452 +02:00 [INF] Now listening on: https://localhost:7255
+2024-05-22 14:06:04.454 +02:00 [INF] Now listening on: http://localhost:5207
+2024-05-22 14:06:04.456 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-22 14:06:04.458 +02:00 [INF] Hosting environment: Development
+2024-05-22 14:06:04.459 +02:00 [INF] Content root path: C:\Users\jgfes\source\repos\BlazorSimuladorJGF
+2024-05-22 14:06:07.624 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/ - null null
+2024-05-22 14:06:07.873 +02:00 [INF] Executing endpoint '/_Host'
+2024-05-22 14:06:07.900 +02:00 [INF] Route matched with {page = "/_Host", action = "", controller = ""}. Executing page /_Host
+2024-05-22 14:06:07.913 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-22 14:06:07.916 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-22 14:06:08.178 +02:00 [INF] Executed page /_Host in 272.8457ms
+2024-05-22 14:06:08.181 +02:00 [INF] Executed endpoint '/_Host'
+2024-05-22 14:06:08.185 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following routes are ambiguous:
+'counter' in 'BlazorSimuladorJGF.Components.Pages.Counter'
+'counter' in 'BlazorSimuladorJGF.Pages.Counter'
+
+   at Microsoft.AspNetCore.Components.RouteTableFactory.DetectAmbiguousRoutes(TreeRouteBuilder builder)
+   at Microsoft.AspNetCore.Components.RouteTableFactory.Create(Dictionary`2 templatesByHandler, IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Components.RouteTableFactory.Create(List`1 componentTypes, IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Components.RouteTableFactory.Create(RouteKey routeKey, IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Components.Routing.Router.RefreshRouteTable()
+   at Microsoft.AspNetCore.Components.Routing.Router.Refresh(Boolean isNavigationIntercepted)
+   at Microsoft.AspNetCore.Components.Routing.Router.RunOnNavigateAsync(String path, Boolean isNavigationIntercepted)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.AddToRenderQueue(Int32 componentId, RenderFragment renderFragment)
+   at Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary.SetParametersAsync(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SupplyCombinedParameters(ParameterView directAndCascadingParameters)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.RenderRootComponentAsync(Int32 componentId, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer.BeginRenderingComponent(IComponent component, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.Endpoints.EndpointHtmlRenderer.<>c__DisplayClass35_0.<PrerenderComponentAsync>b__0()
+   at Microsoft.AspNetCore.Components.Rendering.RendererSynchronizationContext.<InvokeAsync>g__Execute|9_0[TResult](ValueTuple`3 state)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.Endpoints.EndpointHtmlRenderer.PrerenderComponentAsync(HttpContext httpContext, Type componentType, IComponentRenderMode prerenderMode, ParameterView parameters, Boolean waitForQuiescence)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.ComponentTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at BlazorSimulador.Pages.Pages__Host.<ExecuteAsync>b__14_1() in C:\Users\jgfes\source\repos\BlazorSimuladorJGF\Pages\_Host.cshtml:line 22
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at BlazorSimulador.Pages.Pages__Host.ExecuteAsync() in C:\Users\jgfes\source\repos\BlazorSimuladorJGF\Pages\_Host.cshtml:line 7
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-22 14:06:08.315 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/ - 500 null text/html; charset=utf-8 715.4159ms
+2024-05-22 14:06:08.375 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_vs/browserLink - null null
+2024-05-22 14:06:08.375 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-22 14:06:08.421 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 46.065ms
+2024-05-22 14:06:08.477 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.9056ms
+2024-05-22 14:06:08.492 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/favicon.ico - null null
+2024-05-22 14:06:08.503 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/favicon.ico - 404 0 null 10.5683ms
+2024-05-22 14:06:08.508 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7255/favicon.ico, Response status code: 404
+2024-05-22 14:08:12.121 +02:00 [INF] User profile is available. Using 'C:\Users\jgfes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-22 14:08:12.680 +02:00 [INF] Now listening on: https://localhost:7255
+2024-05-22 14:08:12.682 +02:00 [INF] Now listening on: http://localhost:5207
+2024-05-22 14:08:12.685 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-22 14:08:12.686 +02:00 [INF] Hosting environment: Development
+2024-05-22 14:08:12.687 +02:00 [INF] Content root path: C:\Users\jgfes\source\repos\BlazorSimuladorJGF
+2024-05-22 14:08:15.571 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/ - null null
+2024-05-22 14:08:15.926 +02:00 [INF] Executing endpoint '/_Host'
+2024-05-22 14:08:15.950 +02:00 [INF] Route matched with {page = "/_Host", action = "", controller = ""}. Executing page /_Host
+2024-05-22 14:08:15.965 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-22 14:08:15.967 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-22 14:08:16.265 +02:00 [INF] Executed page /_Host in 309.1057ms
+2024-05-22 14:08:16.270 +02:00 [INF] Executed endpoint '/_Host'
+2024-05-22 14:08:16.275 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The following routes are ambiguous:
+'counter' in 'BlazorSimuladorJGF.Components.Pages.Counter'
+'counter' in 'BlazorSimuladorJGF.Pages.Counter'
+
+   at Microsoft.AspNetCore.Components.RouteTableFactory.DetectAmbiguousRoutes(TreeRouteBuilder builder)
+   at Microsoft.AspNetCore.Components.RouteTableFactory.Create(Dictionary`2 templatesByHandler, IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Components.RouteTableFactory.Create(List`1 componentTypes, IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Components.RouteTableFactory.Create(RouteKey routeKey, IServiceProvider serviceProvider)
+   at Microsoft.AspNetCore.Components.Routing.Router.RefreshRouteTable()
+   at Microsoft.AspNetCore.Components.Routing.Router.Refresh(Boolean isNavigationIntercepted)
+   at Microsoft.AspNetCore.Components.Routing.Router.RunOnNavigateAsync(String path, Boolean isNavigationIntercepted)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.RenderIntoBatch(RenderBatchBuilder batchBuilder, RenderFragment renderFragment, Exception& renderFragmentException)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.ProcessRenderQueue()
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.AddToRenderQueue(Int32 componentId, RenderFragment renderFragment)
+   at Microsoft.AspNetCore.Components.Endpoints.SSRRenderModeBoundary.SetParametersAsync(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SupplyCombinedParameters(ParameterView directAndCascadingParameters)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.Rendering.ComponentState.SetDirectParameters(ParameterView parameters)
+   at Microsoft.AspNetCore.Components.RenderTree.Renderer.RenderRootComponentAsync(Int32 componentId, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.HtmlRendering.Infrastructure.StaticHtmlRenderer.BeginRenderingComponent(IComponent component, ParameterView initialParameters)
+   at Microsoft.AspNetCore.Components.Endpoints.EndpointHtmlRenderer.<>c__DisplayClass35_0.<PrerenderComponentAsync>b__0()
+   at Microsoft.AspNetCore.Components.Rendering.RendererSynchronizationContext.<InvokeAsync>g__Execute|9_0[TResult](ValueTuple`3 state)
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Components.Endpoints.EndpointHtmlRenderer.PrerenderComponentAsync(HttpContext httpContext, Type componentType, IComponentRenderMode prerenderMode, ParameterView parameters, Boolean waitForQuiescence)
+   at Microsoft.AspNetCore.Mvc.TagHelpers.ComponentTagHelper.ProcessAsync(TagHelperContext context, TagHelperOutput output)
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperRunner.<RunAsync>g__Awaited|0_0(Task task, TagHelperExecutionContext executionContext, Int32 i, Int32 count)
+   at BlazorSimulador.Pages.Pages__Host.<ExecuteAsync>b__14_1() in C:\Users\jgfes\source\repos\BlazorSimuladorJGF\Pages\_Host.cshtml:line 22
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at BlazorSimulador.Pages.Pages__Host.ExecuteAsync() in C:\Users\jgfes\source\repos\BlazorSimuladorJGF\Pages\_Host.cshtml:line 7
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-05-22 14:08:16.391 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/ - 500 null text/html; charset=utf-8 833.1711ms
+2024-05-22 14:08:16.433 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-22 14:08:16.433 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_vs/browserLink - null null
+2024-05-22 14:08:16.466 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 31.7461ms
+2024-05-22 14:08:16.518 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_vs/browserLink - 200 null text/javascript; charset=UTF-8 85.7483ms
+2024-05-22 14:08:16.523 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/favicon.ico - null null
+2024-05-22 14:08:16.538 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/favicon.ico - 404 0 null 15.1134ms
+2024-05-22 14:08:16.593 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7255/favicon.ico, Response status code: 404
+2024-05-22 14:09:50.229 +02:00 [INF] User profile is available. Using 'C:\Users\jgfes\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-05-22 14:09:50.989 +02:00 [INF] Now listening on: https://localhost:7255
+2024-05-22 14:09:50.994 +02:00 [INF] Now listening on: http://localhost:5207
+2024-05-22 14:09:50.996 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-05-22 14:09:50.998 +02:00 [INF] Hosting environment: Development
+2024-05-22 14:09:50.998 +02:00 [INF] Content root path: C:\Users\jgfes\source\repos\BlazorSimuladorJGF
+2024-05-22 14:09:53.377 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/ - null null
+2024-05-22 14:09:53.640 +02:00 [INF] Executing endpoint '/_Host'
+2024-05-22 14:09:53.662 +02:00 [INF] Route matched with {page = "/_Host", action = "", controller = ""}. Executing page /_Host
+2024-05-22 14:09:53.678 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-22 14:09:53.680 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-22 14:09:53.919 +02:00 [INF] Executed page /_Host in 247.1733ms
+2024-05-22 14:09:53.971 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/css/site.css - null null
+2024-05-22 14:09:53.971 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/css/bootstrap/bootstrap.min.css - null null
+2024-05-22 14:09:53.971 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_framework/blazor.server.js - null null
+2024-05-22 14:09:53.974 +02:00 [INF] Executed endpoint '/_Host'
+2024-05-22 14:09:53.981 +02:00 [INF] Executing endpoint 'Blazor static files'
+2024-05-22 14:09:54.003 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/ - 200 null text/html; charset=utf-8 632.5588ms
+2024-05-22 14:09:54.009 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_vs/browserLink - null null
+2024-05-22 14:09:54.011 +02:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\jgfes\source\repos\BlazorSimuladorJGF\wwwroot\css\site.css'
+2024-05-22 14:09:54.017 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-22 14:09:54.044 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/css/site.css - 200 2034 text/css 72.8787ms
+2024-05-22 14:09:54.049 +02:00 [INF] Sending file. Request path: '/_framework/blazor.server.js'. Physical path: 'N/A'
+2024-05-22 14:09:54.076 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 59.0911ms
+2024-05-22 14:09:54.092 +02:00 [INF] Sending file. Request path: '/css/bootstrap/bootstrap.min.css'. Physical path: 'C:\Users\jgfes\source\repos\BlazorSimuladorJGF\wwwroot\css\bootstrap\bootstrap.min.css'
+2024-05-22 14:09:54.093 +02:00 [INF] Executed endpoint 'Blazor static files'
+2024-05-22 14:09:54.098 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/css/bootstrap/bootstrap.min.css - 200 162720 text/css 127.1901ms
+2024-05-22 14:09:54.112 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_framework/blazor.server.js - 200 151912 text/javascript 140.7782ms
+2024-05-22 14:09:54.132 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_vs/browserLink - 200 null text/javascript; charset=UTF-8 123.7689ms
+2024-05-22 14:09:54.563 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_blazor/initializers - null null
+2024-05-22 14:09:54.570 +02:00 [INF] Executing endpoint 'Blazor initializers'
+2024-05-22 14:09:54.576 +02:00 [INF] Executed endpoint 'Blazor initializers'
+2024-05-22 14:09:54.578 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_blazor/initializers - 200 null application/json; charset=utf-8 14.7776ms
+2024-05-22 14:09:54.642 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7255/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-05-22 14:09:54.645 +02:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-05-22 14:09:54.660 +02:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-05-22 14:09:54.662 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7255/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 19.8871ms
+2024-05-22 14:09:54.672 +02:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7255/_blazor?id=eun_wZjaErHM_GtlRVk2bg - null null
+2024-05-22 14:09:54.674 +02:00 [INF] Executing endpoint '/_blazor'
+2024-05-22 14:09:54.766 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/favicon.png - null null
+2024-05-22 14:09:54.776 +02:00 [INF] Sending file. Request path: '/favicon.png'. Physical path: 'C:\Users\jgfes\source\repos\BlazorSimuladorJGF\wwwroot\favicon.png'
+2024-05-22 14:09:54.779 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/favicon.png - 200 1148 image/png 14.0828ms
+2024-05-22 14:11:26.118 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/ - null null
+2024-05-22 14:11:26.123 +02:00 [INF] Executed endpoint '/_blazor'
+2024-05-22 14:11:26.145 +02:00 [INF] Request finished HTTP/2 CONNECT https://localhost:7255/_blazor?id=eun_wZjaErHM_GtlRVk2bg - 200 null null 91473.2654ms
+2024-05-22 14:11:26.151 +02:00 [INF] Connection id "0HN3QB0AHP3GO", Request id "0HN3QB0AHP3GO:0000001F": the application completed without reading the entire request body.
+2024-05-22 14:11:26.151 +02:00 [INF] Executing endpoint '/_Host'
+2024-05-22 14:11:26.153 +02:00 [INF] Route matched with {page = "/_Host", action = "", controller = ""}. Executing page /_Host
+2024-05-22 14:11:26.155 +02:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-05-22 14:11:26.157 +02:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-05-22 14:11:26.171 +02:00 [INF] Executed page /_Host in 16.7362ms
+2024-05-22 14:11:26.176 +02:00 [INF] Executed endpoint '/_Host'
+2024-05-22 14:11:26.181 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/ - 200 null text/html; charset=utf-8 63.4398ms
+2024-05-22 14:11:26.229 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7255/_blazor/disconnect - multipart/form-data; boundary=---------------------------428495677223249958643298044328 397
+2024-05-22 14:11:26.231 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_vs/browserLink - null null
+2024-05-22 14:11:26.229 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_framework/blazor.server.js - null null
+2024-05-22 14:11:26.235 +02:00 [INF] Executing endpoint 'Blazor disconnect'
+2024-05-22 14:11:26.232 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_framework/aspnetcore-browser-refresh.js - null null
+2024-05-22 14:11:26.251 +02:00 [INF] Executing endpoint 'Blazor static files'
+2024-05-22 14:11:26.263 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_framework/aspnetcore-browser-refresh.js - 200 13772 application/javascript; charset=utf-8 31.2079ms
+2024-05-22 14:11:26.279 +02:00 [INF] Executed endpoint 'Blazor disconnect'
+2024-05-22 14:11:26.280 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.206ms
+2024-05-22 14:11:26.280 +02:00 [INF] Sending file. Request path: '/_framework/blazor.server.js'. Physical path: 'N/A'
+2024-05-22 14:11:26.282 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7255/_blazor/disconnect - 200 0 null 53.4669ms
+2024-05-22 14:11:26.286 +02:00 [INF] Executed endpoint 'Blazor static files'
+2024-05-22 14:11:26.290 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_framework/blazor.server.js - 200 151912 text/javascript 60.2704ms
+2024-05-22 14:11:26.318 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7255/_blazor/initializers - null null
+2024-05-22 14:11:26.321 +02:00 [INF] Executing endpoint 'Blazor initializers'
+2024-05-22 14:11:26.322 +02:00 [INF] Executed endpoint 'Blazor initializers'
+2024-05-22 14:11:26.323 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7255/_blazor/initializers - 200 null application/json; charset=utf-8 5.28ms
+2024-05-22 14:11:26.365 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7255/_blazor/negotiate?negotiateVersion=1 - null 0
+2024-05-22 14:11:26.369 +02:00 [INF] Executing endpoint '/_blazor/negotiate'
+2024-05-22 14:11:26.373 +02:00 [INF] Executed endpoint '/_blazor/negotiate'
+2024-05-22 14:11:26.379 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7255/_blazor/negotiate?negotiateVersion=1 - 200 316 application/json 15.3482ms
+2024-05-22 14:11:26.393 +02:00 [INF] Request starting HTTP/2 CONNECT https://localhost:7255/_blazor?id=RDIE_Uvi7rvPkicM262Qqg - null null
+2024-05-22 14:11:26.396 +02:00 [INF] Executing endpoint '/_blazor'

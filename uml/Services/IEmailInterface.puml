@@ -1,0 +1,8 @@
+@startuml
+interface IEmailInterface {
+    SendEmailAsync(request:EmailDTO) : Task
+    GetTemplateByName(templateName:string) : EmailTemplate
+    ReplacePlaceholders(templateBody:string, placeholders:Dictionary<string, string>) : string
+    SendEmailWithTemplateAsync(to:string, templateName:string, placeholders:Dictionary<string, string>) : Task
+}
+@enduml

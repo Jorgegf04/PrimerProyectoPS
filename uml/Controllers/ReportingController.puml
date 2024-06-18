@@ -1,0 +1,12 @@
+@startuml
+class ReportingController {
+    + ReportingController(reportingService:ReportingService, pdfReportGenerator:PdfReportGenerator, excelReportGenerator:ExcelReportGenerator)
+    + <<async>> GetPhishingReport(campaignId:int) : Task<IActionResult>
+    + <<async>> GetPdfReport(campaignId:int) : Task<IActionResult>
+    + <<async>> GetExcelReport(campaignId:int) : Task<IActionResult>
+}
+ControllerBase <|-- ReportingController
+ReportingController --> "_reportingService" ReportingService
+ReportingController --> "_pdfReportGenerator" PdfReportGenerator
+ReportingController --> "_excelReportGenerator" ExcelReportGenerator
+@enduml

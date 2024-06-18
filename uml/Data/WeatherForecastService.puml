@@ -1,0 +1,5 @@
+@startuml
+class WeatherForecastService {
+    + GetForecastAsync(startDate:DateOnly) : Task<WeatherForecast[]>
+}
+@enduml

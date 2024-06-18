@@ -1,0 +1,11 @@
+@startuml
+class EmailResult {
+    + Id : int <<get>> <<set>>
+    + RecipientId : int <<get>> <<set>>
+    + Opened : bool <<get>> <<set>>
+    + Clicked : bool <<get>> <<set>>
+}
+EmailResult --> "Recipient" Recipient
+EmailResult --> "OpenedDateTime" DateTime
+EmailResult --> "ClickedDateTime" DateTime
+@enduml

@@ -1,0 +1,11 @@
+@startuml
+interface ICampaignInterface {
+    CreateCampaignAsync(campaign:Campaign) : Task
+    GetCampaignsAsync() : Task<List<Campaign>>
+    GetCampaignByIdAsync(id:int) : Task<Campaign>
+    MarkEmailAsOpenedAsync(emailId:string) : Task
+    MarkEmailAsClickedAsync(emailId:string) : Task
+    UpdateCampaignAsync(campaign:Campaign) : Task
+    DeleteCampaignAsync(id:int) : Task
+}
+@enduml

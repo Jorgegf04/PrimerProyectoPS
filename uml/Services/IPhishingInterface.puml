@@ -1,0 +1,8 @@
+@startuml
+interface IPhishingInterface {
+    LogPhishingAttemptAsync(userId:int, campaignId:int, isPhished:bool) : Task<bool>
+    GetPhishingResultsAsync(campaignId:int) : Task<List<PhishingTest>>
+    MarkEmailAsOpenedAsync(emailId:string) : Task<bool>
+    MarkEmailAsClickedAsync(emailId:string) : Task<bool>
+}
+@enduml

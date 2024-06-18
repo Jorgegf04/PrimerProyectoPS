@@ -1,0 +1,98 @@
+﻿@page "/reports"
+@using BlazorSimuladorJGF.Models
+@using BlazorSimuladorJGF.Services
+@inject ReportingService ReportingService
+@inject IJSRuntime JSRuntime
+
+<h3>Phishing Campaign Reports</h3>
+
+@if (campaignReports != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Report ID</th>
+                <th>Campaign ID</th>
+                <th>Total Emails Sent</th>
+                <th>Total Emails Opened</th>
+                <th>Total Links Clicked</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var report in campaignReports)
+            {
+                <tr>
+                    <td>@report.Id</td>
+                    <td>@report.CampaignId</td>
+                    <td>@report.TotalEmailsSent</td>
+                    <td>@report.TotalEmailsOpened</td>
+                    <td>@report.TotalLinksClicked</td>
+                    <td>
+                        <button @onclick="() => DownloadPdf(report.CampaignId)">Download PDF</button>
+                        <button @onclick="() => DownloadExcel(report.CampaignId)">Download Excel</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p><em>Loading...</em></p>
+}
+
+@code {
+    private List<PhishingReport> campaignReports;
+
+    protected override async Task OnInitializedAsync()
+    {
+        campaignReports = await LoadCampaignReportsAsync();
+    }
+
+    private async Task<List<PhishingReport>> LoadCampaignReportsAsync()
+    {
+        var reports = new List<PhishingReport>();
+
+        // Load the list of campaign IDs (this should come from your database or service)
+        var campaignIds = new List<int> { 1, 2, 3 }; // Example campaign IDs
+
+        foreach (var campaignId in campaignIds)
+        {
+            var report = await ReportingService.GeneratePhishingReportAsync(campaignId);
+            report.CampaignId = campaignId;
+            report.Id = campaignId; // Assuming you have a unique ID per report, this is just for demonstration
+            reports.Add(report);
+        }
+
+        return reports;
+    }
+
+    private async Task DownloadPdf(int campaignId)
+    {
+        try
+        {
+            var pdfBytes = await ReportingService.GetPdfReportBytesAsync(campaignId);
+            var base64 = Convert.ToBase64String(pdfBytes);
+            await JSRuntime.InvokeVoidAsync("downloadFile", base64, "application/pdf", $"report_{campaignId}.pdf");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error downloading PDF: {ex.Message}");
+        }
+    }
+
+    private async Task DownloadExcel(int campaignId)
+    {
+        try
+        {
+            var excelBytes = await ReportingService.GetExcelReportBytesAsync(campaignId);
+            var base64 = Convert.ToBase64String(excelBytes);
+            await JSRuntime.InvokeVoidAsync("downloadFile", base64, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", $"report_{campaignId}.xlsx");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error downloading Excel: {ex.Message}");
+        }
+    }
+}

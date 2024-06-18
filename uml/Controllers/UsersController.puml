@@ -1,0 +1,15 @@
+@startuml
+class UserController {
+    + UserController(userService:IUserService, logger:ILogger<UserController>)
+    + <<async>> GetUsers() : Task<IActionResult>
+    + <<async>> GetUser(id:int) : Task<IActionResult>
+    + <<async>> AddUser(user:User) : Task<IActionResult>
+    + <<async>> UpdateUser(user:User) : Task<IActionResult>
+    + <<async>> DeleteUser(id:int) : Task<IActionResult>
+}
+class "ILogger`1"<T> {
+}
+ControllerBase <|-- UserController
+UserController --> "_userService" IUserService
+UserController --> "_logger<UserController>" "ILogger`1"
+@enduml

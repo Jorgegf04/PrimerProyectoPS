@@ -1,0 +1,16 @@
+@startuml
+class PhishingReport {
+    + Id : int <<get>> <<set>>
+    + CampaignId : int <<get>> <<set>>
+    + TotalEmailsSent : int <<get>> <<set>>
+    + TotalEmailsOpened : int <<get>> <<set>>
+    + TotalLinksClicked : int <<get>> <<set>>
+    + PhishingReport()
+}
+class "Dictionary`2"<T1,T2> {
+}
+class "List`1"<T> {
+}
+PhishingReport --> "PhishingAttemptsByUser<string,int>" "Dictionary`2"
+PhishingReport --> "DailyStats<DailyEmailStats>" "List`1"
+@enduml

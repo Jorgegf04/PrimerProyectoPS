@@ -1,0 +1,141 @@
+/* Import the Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html, body {
+    font-family: 'Press Start 2P', monospace;
+    background-color: black;
+    color: #33ff33;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #33ff33;
+    text-align: center;
+    margin: 20px 0;
+}
+
+a, .btn-link {
+    color: #33ff33;
+    text-decoration: none;
+}
+
+    a:hover, .btn-link:hover {
+        text-decoration: underline;
+    }
+
+.btn-primary {
+    color: #000;
+    background-color: #33ff33;
+    border-color: #1b6ec2;
+}
+
+    .btn-primary:hover {
+        background-color: #28cc28;
+        border-color: #149d14;
+    }
+
+.content {
+    padding: 2rem;
+    background-color: #111;
+    border: 1px solid #33ff33;
+    margin: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #33ff33;
+    border-collapse: collapse;
+}
+
+    .table th, .table td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #33ff33;
+    }
+
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #33ff33;
+    }
+
+    .table tbody + tbody {
+        border-top: 2px solid #33ff33;
+    }
+
+.table-hover tbody tr:hover {
+    color: #000;
+    background-color: #33ff33;
+}
+
+.list-group-item {
+    background-color: #111;
+    color: #33ff33;
+    border: 1px solid #33ff33;
+}
+
+    .list-group-item:hover {
+        background-color: #333;
+    }
+
+.navbar {
+    background-color: black;
+    border-bottom: 1px solid #33ff33;
+}
+
+.navbar-brand {
+    color: #33ff33;
+}
+
+.navbar-toggler {
+    border-color: #33ff33;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2833, 255, 33, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-scrollable {
+    max-height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+
+.nav-item .nav-link {
+    color: #33ff33;
+}
+
+    .nav-item .nav-link.active {
+        background-color: #333;
+    }
+
+    .nav-item .nav-link:hover {
+        background-color: #444;
+    }
+
+#blazor-error-ui {
+    background: black;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
+
+.blazor-error-boundary {
+    background: #b32121;
+    padding: 1rem;
+    color: white;
+}
+
+    .blazor-error-boundary::after {
+        content: "An error has occurred.";
+    }

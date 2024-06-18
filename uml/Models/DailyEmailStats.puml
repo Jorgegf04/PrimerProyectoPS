@@ -1,0 +1,8 @@
+@startuml
+class DailyEmailStats {
+    + EmailsSent : int <<get>> <<set>> = 0
+    + EmailsOpened : int <<get>> <<set>> = 0
+    + LinksClicked : int <<get>> <<set>> = 0
+}
+DailyEmailStats o-> "Date" DateTime
+@enduml

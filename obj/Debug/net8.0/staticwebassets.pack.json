@@ -1,0 +1,93 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\BlazorSimuladorJGF.bundle.scp.css",
+      "PackagePath": "staticwebassets\\BlazorSimuladorJGF.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\wwwroot\\site.js",
+      "PackagePath": "staticwebassets\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.BlazorSimuladorJGF.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.BlazorSimuladorJGF.props",
+      "PackagePath": "build\\BlazorSimuladorJGF.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.BlazorSimuladorJGF.props",
+      "PackagePath": "buildMultiTargeting\\BlazorSimuladorJGF.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.BlazorSimuladorJGF.props",
+      "PackagePath": "buildTransitive\\BlazorSimuladorJGF.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

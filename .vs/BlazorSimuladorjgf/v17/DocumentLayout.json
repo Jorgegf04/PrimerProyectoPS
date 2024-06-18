@@ -1,0 +1,415 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\models\\campaign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:models\\campaign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|c:\\users\\jgfes\\onedrive\\escritorio\\blazorsimuladorjgfcopia\\models\\dailyemailstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:models\\dailyemailstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\models\\recipient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:models\\recipient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|c:\\users\\jgfes\\onedrive\\escritorio\\blazorsimuladorjgfcopia\\models\\phishingtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:models\\phishingtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|c:\\users\\jgfes\\onedrive\\escritorio\\blazorsimuladorjgfcopia\\models\\phishingreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:models\\phishingreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|c:\\users\\jgfes\\onedrive\\escritorio\\blazorsimuladorjgfcopia\\models\\pdfreportgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:models\\pdfreportgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|c:\\users\\jgfes\\onedrive\\escritorio\\blazorsimuladorjgfcopia\\models\\excelreportgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:models\\excelreportgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|c:\\users\\jgfes\\onedrive\\escritorio\\blazorsimuladorjgfcopia\\models\\emailtemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:models\\emailtemplate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|c:\\users\\jgfes\\onedrive\\escritorio\\blazorsimuladorjgfcopia\\models\\emailresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:models\\emailresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|c:\\users\\jgfes\\onedrive\\escritorio\\blazorsimuladorjgfcopia\\models\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:models\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|c:\\users\\jgfes\\onedrive\\escritorio\\blazorsimuladorjgfcopia\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\pages\\camapaign.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:pages\\camapaign.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\services\\campaignservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:services\\campaignservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\controllers\\campaigncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:controllers\\campaigncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jgfes\\source\\repos\\BlazorSimuladorjgf\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:shared\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\pages\\results.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:pages\\results.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\pages\\reportspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:pages\\reportspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AB4EFD94-3034-40AA-9196-B322375296A4}|BlazorSimuladorJGF.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 351,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DailyEmailStats.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\DailyEmailStats.cs",
+              "RelativeDocumentMoniker": "Models\\DailyEmailStats.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\DailyEmailStats.cs",
+              "RelativeToolTip": "Models\\DailyEmailStats.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T14:49:49.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PhishingTest.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\PhishingTest.cs",
+              "RelativeDocumentMoniker": "Models\\PhishingTest.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\PhishingTest.cs",
+              "RelativeToolTip": "Models\\PhishingTest.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T14:56:20.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PhishingReport.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\PhishingReport.cs",
+              "RelativeDocumentMoniker": "Models\\PhishingReport.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\PhishingReport.cs",
+              "RelativeToolTip": "Models\\PhishingReport.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T14:55:29.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PdfReportGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\PdfReportGenerator.cs",
+              "RelativeDocumentMoniker": "Models\\PdfReportGenerator.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\PdfReportGenerator.cs",
+              "RelativeToolTip": "Models\\PdfReportGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T14:54:49.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExcelReportGenerator.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\ExcelReportGenerator.cs",
+              "RelativeDocumentMoniker": "Models\\ExcelReportGenerator.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\ExcelReportGenerator.cs",
+              "RelativeToolTip": "Models\\ExcelReportGenerator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T14:53:43.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmailTemplate.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\EmailTemplate.cs",
+              "RelativeDocumentMoniker": "Models\\EmailTemplate.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\EmailTemplate.cs",
+              "RelativeToolTip": "Models\\EmailTemplate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T14:53:02.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmailResult.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\EmailResult.cs",
+              "RelativeDocumentMoniker": "Models\\EmailResult.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\EmailResult.cs",
+              "RelativeToolTip": "Models\\EmailResult.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T14:52:25.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmailDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\EmailDTO.cs",
+              "RelativeDocumentMoniker": "Models\\EmailDTO.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\EmailDTO.cs",
+              "RelativeToolTip": "Models\\EmailDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T14:51:14.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Shared\\NavMenu.razor",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADQAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T15:46:03.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Campaign.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\Campaign.cs",
+              "RelativeDocumentMoniker": "Models\\Campaign.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\Campaign.cs",
+              "RelativeToolTip": "Models\\Campaign.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T13:13:50.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-24T15:41:32.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\App.razor",
+              "RelativeDocumentMoniker": "App.razor",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\App.razor",
+              "RelativeToolTip": "App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T15:41:25.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Recipient.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\Recipient.cs",
+              "RelativeDocumentMoniker": "Models\\Recipient.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Models\\Recipient.cs",
+              "RelativeToolTip": "Models\\Recipient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T21:08:20.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-24T15:44:04.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\source\\repos\\BlazorSimuladorjgf\\Program.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\source\\repos\\BlazorSimuladorjgf\\Program.cs",
+              "ToolTip": "C:\\Users\\jgfes\\source\\repos\\BlazorSimuladorjgf\\Program.cs",
+              "RelativeToolTip": "..\\..\\..\\source\\repos\\BlazorSimuladorjgf\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T21:05:10.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_Host.cshtml",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "Pages\\_Host.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T15:40:48.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T15:40:21.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Camapaign.razor",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Pages\\Camapaign.razor",
+              "RelativeDocumentMoniker": "Pages\\Camapaign.razor",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Pages\\Camapaign.razor",
+              "RelativeToolTip": "Pages\\Camapaign.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T15:38:06.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Results.razor",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Pages\\Results.razor",
+              "RelativeDocumentMoniker": "Pages\\Results.razor",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Pages\\Results.razor",
+              "RelativeToolTip": "Pages\\Results.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T14:16:24.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CampaignService.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Services\\CampaignService.cs",
+              "RelativeDocumentMoniker": "Services\\CampaignService.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Services\\CampaignService.cs",
+              "RelativeToolTip": "Services\\CampaignService.cs",
+              "ViewState": "AQIAAAEBAAAAAAAAAAAAACYBAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T14:12:25.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CampaignController.cs",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Controllers\\CampaignController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CampaignController.cs",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Controllers\\CampaignController.cs",
+              "RelativeToolTip": "Controllers\\CampaignController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-24T16:42:22.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Shared\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Shared\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Shared\\MainLayout.razor",
+              "RelativeToolTip": "Shared\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T15:46:09.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ReportsPage.razor",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Pages\\ReportsPage.razor",
+              "RelativeDocumentMoniker": "Pages\\ReportsPage.razor",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\Pages\\ReportsPage.razor",
+              "RelativeToolTip": "Pages\\ReportsPage.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T15:47:55.223Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\_Imports.razor",
+              "RelativeDocumentMoniker": "_Imports.razor",
+              "ToolTip": "C:\\Users\\jgfes\\OneDrive\\Escritorio\\BlazorSimuladorjgfCopia\\_Imports.razor",
+              "RelativeToolTip": "_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-24T15:56:06.864Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

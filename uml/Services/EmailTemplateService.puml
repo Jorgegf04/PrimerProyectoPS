@@ -1,0 +1,15 @@
+@startuml
+class EmailTemplateService {
+    - <<readonly>> _connectionString : string
+    + EmailTemplateService(configuration:IConfiguration, logger:ILogger<EmailTemplateService>)
+    - ContainsSuspiciousWords(text:string) : bool
+    + <<async>> GetTemplateByIdAsync(id:int) : Task<EmailTemplate>
+    + <<async>> GetTemplatesAsync() : Task<List<EmailTemplate>>
+    + <<async>> CreateTemplateAsync(template:EmailTemplate) : Task
+    + <<async>> UpdateTemplateAsync(template:EmailTemplate) : Task
+    + <<async>> DeleteTemplateAsync(templateId:int) : Task
+}
+class "ILogger`1"<T> {
+}
+EmailTemplateService --> "_logger<EmailTemplateService>" "ILogger`1"
+@enduml

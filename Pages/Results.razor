@@ -1,0 +1,86 @@
+﻿@page "/results"
+@using BlazorSimuladorJGF.Models
+@using BlazorSimuladorJGF.Services
+@inject ReportingService ReportingService
+@inject IJSRuntime JSRuntime
+@inject NavigationManager NavigationManager
+
+<h3>Phishing Campaign Results</h3>
+
+@if (campaigns != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Campaign ID</th>
+                <th>Total Emails Sent</th>
+                <th>Total Emails Opened</th>
+                <th>Total Links Clicked</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var campaign in campaigns)
+            {
+                <tr>
+                    <td>@campaign.CampaignId</td>
+                    <td>@campaign.TotalEmailsSent</td>
+                    <td>@campaign.TotalEmailsOpened</td>
+                    <td>@campaign.TotalLinksClicked</td>
+                    <td>
+                        <button class="btn btn-primary" @onclick="() => ViewDetails(campaign.CampaignId)">View Details</button>
+                        <button class="btn btn-secondary" @onclick="() => DownloadPdf(campaign.CampaignId)">Download PDF</button>
+                        <button class="btn btn-secondary" @onclick="() => DownloadExcel(campaign.CampaignId)">Download Excel</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p><em>Loading...</em></p>
+}
+
+@code {
+    private List<PhishingReport> campaigns;
+
+    protected override async Task OnInitializedAsync()
+    {
+        campaigns = await LoadCampaignResultsAsync();
+    }
+
+    private async Task<List<PhishingReport>> LoadCampaignResultsAsync()
+    {
+        var campaignResults = new List<PhishingReport>();
+        var campaignIds = new List<int> {};
+
+        foreach (var campaignId in campaignIds)
+        {
+            var result = await ReportingService.GeneratePhishingReportAsync(campaignId);
+            result.CampaignId = campaignId; 
+            campaignResults.Add(result);
+        }
+
+        return campaignResults;
+    }
+
+    private void ViewDetails(int campaignId)
+    {
+        NavigationManager.NavigateTo($"/report/{campaignId}");
+    }
+
+    private async Task DownloadPdf(int campaignId)
+    {
+        var pdfBytes = await ReportingService.GetPdfReportBytesAsync(campaignId);
+        var base64 = Convert.ToBase64String(pdfBytes);
+        await JSRuntime.InvokeVoidAsync("downloadFile", base64, "application/pdf", "report.pdf");
+    }
+
+    private async Task DownloadExcel(int campaignId)
+    {
+        var excelBytes = await ReportingService.GetExcelReportBytesAsync(campaignId);
+        var base64 = Convert.ToBase64String(excelBytes);
+        await JSRuntime.InvokeVoidAsync("downloadFile", base64, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "report.xlsx");
+    }
+}

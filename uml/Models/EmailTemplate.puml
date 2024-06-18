@@ -1,0 +1,9 @@
+@startuml
+class EmailTemplate {
+    + Id : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + Subject : string <<get>> <<set>>
+    + Body : string <<get>> <<set>>
+    + IsSuspicious : bool <<get>> <<set>>
+}
+@enduml

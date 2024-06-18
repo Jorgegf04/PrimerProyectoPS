@@ -1,0 +1,14 @@
+@startuml
+class EmailTemplateController {
+    + EmailTemplateController(emailTemplateService:EmailTemplateService, logger:ILogger<EmailTemplateController>)
+    + <<async>> GetTemplates() : Task<IActionResult>
+    + <<async>> CreateTemplate(template:EmailTemplate) : Task<IActionResult>
+    + <<async>> UpdateTemplate(template:EmailTemplate) : Task<IActionResult>
+    + <<async>> DeleteTemplate(id:int) : Task<IActionResult>
+}
+class "ILogger`1"<T> {
+}
+ControllerBase <|-- EmailTemplateController
+EmailTemplateController --> "_emailTemplateService" EmailTemplateService
+EmailTemplateController --> "_logger<EmailTemplateController>" "ILogger`1"
+@enduml

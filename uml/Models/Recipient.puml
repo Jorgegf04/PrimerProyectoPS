@@ -1,0 +1,9 @@
+@startuml
+class Recipient {
+    + Id : int <<get>> <<set>>
+    + CampaignId : int <<get>> <<set>>
+    + Email : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+}
+Recipient --> "Campaign" Campaign
+@enduml

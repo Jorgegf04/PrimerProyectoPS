@@ -1,0 +1,13 @@
+@startuml
+class Campaign {
+    + Id : int <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + TemplateName : string <<get>> <<set>>
+    + AddRecipient(recipient:Recipient) : void
+}
+class "List`1"<T> {
+}
+Campaign o-> "StartDate" DateTime
+Campaign o-> "EndDate" DateTime
+Campaign o-> "Recipients<Recipient>" "List`1"
+@enduml

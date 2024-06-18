@@ -1,0 +1,14 @@
+@startuml
+class CampaignController {
+    + CampaignController(campaignService:ICampaignInterface, logger:ILogger<CampaignController>)
+    + <<async>> CreateCampaign(campaign:Campaign) : Task<IActionResult>
+    + <<async>> GetCampaigns() : Task<IActionResult>
+    + <<async>> UpdateCampaign(campaign:Campaign) : Task<IActionResult>
+    + <<async>> DeleteCampaign(id:int) : Task<IActionResult>
+}
+class "ILogger`1"<T> {
+}
+ControllerBase <|-- CampaignController
+CampaignController --> "_campaignService" ICampaignInterface
+CampaignController --> "_logger<CampaignController>" "ILogger`1"
+@enduml

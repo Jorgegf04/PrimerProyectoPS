@@ -1,0 +1,100 @@
+﻿@page "/emailtest"
+@using System.ComponentModel.DataAnnotations
+@using BlazorSimuladorJGF.Models
+@using BlazorSimuladorJGF.Services
+@inject IEmailInterface emailService
+
+<h2>Prueba de Envío de Email</h2>
+
+<div class="content">
+    <EditForm Model="@emailModel" OnValidSubmit="SendTestEmail">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <InputText id="email" class="form-control" @bind-Value="emailModel.Email" />
+        </div>
+
+        <div class="form-group">
+            <label for="subject">Asunto:</label>
+            <InputText id="subject" class="form-control" @bind-Value="emailModel.Subject" />
+        </div>
+
+        <div class="form-group">
+            <label for="body">Cuerpo:</label>
+            <InputTextArea id="body" class="form-control" @bind-Value="emailModel.Body" />
+        </div>
+
+        <div class="form-group">
+            <label for="useTemplate">Usar Template:</label>
+            <InputCheckbox id="useTemplate" class="form-check-input" @bind-Value="emailModel.UseTemplate" />
+        </div>
+
+        @if (emailModel.UseTemplate)
+        {
+            <div class="form-group">
+                <label for="templateName">Nombre del Template:</label>
+                <InputText id="templateName" class="form-control" @bind-Value="emailModel.TemplateName" />
+            </div>
+        }
+
+        <button type="submit" class="btn btn-primary">Enviar Email</button>
+    </EditForm>
+</div>
+
+@code {
+    private EmailModel emailModel = new EmailModel();
+
+    private async Task SendTestEmail()
+    {
+        try
+        {
+            if (emailModel.UseTemplate)
+            {
+                var placeholders = new Dictionary<string, string>
+                {
+                    { "RecipientName", "Usuario" } // Añade los placeholders necesarios aquí
+                };
+
+                await emailService.SendEmailWithTemplateAsync(emailModel.Email, emailModel.TemplateName, placeholders);
+            }
+            else
+            {
+                var emailDto = new EmailDTO
+                    {
+                        To = emailModel.Email,
+                        Subject = emailModel.Subject,
+                        Body = emailModel.Body
+                    };
+
+                await emailService.SendEmailAsync(emailDto);
+            }
+
+            // Limpiar el formulario después de enviar el correo
+            emailModel = new EmailModel();
+        }
+        catch (Exception ex)
+        {
+            // Manejar el error
+            Console.WriteLine($"Error al enviar el correo: {ex.Message}");
+        }
+    }
+
+    private class EmailModel
+    {
+        [Required(ErrorMessage = "El correo electrónico es obligatorio.")]
+        [EmailAddress(ErrorMessage = "Formato de correo electrónico inválido.")]
+        public string Email { get; set; }
+
+        [Required(ErrorMessage = "El asunto es obligatorio.")]
+        public string Subject { get; set; }
+
+        [Required(ErrorMessage = "El cuerpo es obligatorio.")]
+        public string Body { get; set; }
+
+        public bool UseTemplate { get; set; }
+
+        public string TemplateName { get; set; }
+    }
+}

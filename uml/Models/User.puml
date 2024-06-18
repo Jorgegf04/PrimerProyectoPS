@@ -1,0 +1,11 @@
+@startuml
+class User {
+    + Id : int <<get>> <<set>>
+    + Email : string <<get>> <<set>>
+    + Name : string <<get>> <<set>>
+    + IsPhished : bool <<get>> <<set>> = false
+}
+class "List`1"<T> {
+}
+User o-> "PhishingTests<PhishingTest>" "List`1"
+@enduml

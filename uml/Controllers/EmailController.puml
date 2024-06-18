@@ -1,0 +1,12 @@
+@startuml
+class EmailController {
+    + EmailController(campaignService:ICampaignInterface, logger:ILogger<EmailController>)
+    + <<async>> TrackOpen(emailId:string) : Task<IActionResult>
+    + <<async>> TrackClick(emailId:string, target:string) : Task<IActionResult>
+}
+class "ILogger`1"<T> {
+}
+ControllerBase <|-- EmailController
+EmailController --> "_campaignService" ICampaignInterface
+EmailController --> "_logger<EmailController>" "ILogger`1"
+@enduml

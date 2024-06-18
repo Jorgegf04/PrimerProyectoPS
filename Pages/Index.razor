@@ -1,0 +1,18 @@
+﻿@page "/index"
+@inject NavigationManager Navigation
+
+<MudContainer>
+    <MudText Typo="Typo.h1">Bienvenido al Simulador de Phishing</MudText>
+
+    <MudText Typo="Typo.body1">
+        Este es un entorno de simulación de phishing para enseñar y aprender sobre ciberseguridad.
+    </MudText>
+    <MudButton Color="Color.Primary" OnClick="ComenzarSimulacion">Comenzar Simulación</MudButton>
+</MudContainer>
+
+@code {
+    private void ComenzarSimulacion()
+    {
+        Navigation.NavigateTo("/emailtest");
+    }
+}
